@@ -1,0 +1,143 @@
+#include <stdio.h>
+
+int main () {
+
+    //Inicializando variáveis. 
+
+    //CARTA 1 
+
+    char estado1 [5];
+    char codigo1 [10];
+    char nomedacidade1 [50];
+    int populacao1;
+    int pontosturisticos1; 
+    float area1;
+    float PIB1;
+    float densidade_p1;
+    float pib_per_capita1;
+
+    //CARTA 2 
+
+    char estado2 [5];
+    char codigo2 [10];
+    char nomedacidade2 [50];
+    int populacao2;
+    int pontosturisticos2; 
+    float area2;
+    float PIB2;
+    float densidade_p2;
+    float pib_per_capita2;
+
+    
+    //Contextualizando 
+
+    printf("SEJA BEM VINDO AO SUPER TRUNFO!!\n\n");
+    printf("PARA INICIARMOS O JOGO, VAMOS COMECAR CADASTRANDO AS CARTAS: (TOTAL 2 CARTAS) \n\n");
+
+    //interação com o usuário
+    //Carta 1:
+
+    printf("CARTA 1:\n\n");
+
+    printf("1.Digite aqui apenas a primeira letra do estado: (exemplo: S)\n");
+    scanf(" %s", estado1);
+
+    printf("2.Digite aqui o codigo da cidade: (exemplo: S01)\n");
+    scanf(" %s", codigo1);
+
+    printf("3.Digite aqui o nome da cidade: (exemplo: São Paulo)\n");
+    scanf(" %s", nomedacidade1);
+
+    printf("4. Qual o numero de habitantes da cidade?\n");
+    scanf("%d", &populacao1);
+
+    printf("5.Digite a area(em KM):\n");
+    scanf("%f", &area1); 
+
+    printf("6. Digite o PIB:\n");
+    scanf("%f", &PIB1);
+
+    printf("7.Quantos pontos turisticos tem na cidade?\n");
+    scanf("%d", &pontosturisticos1);
+
+
+    
+    densidade_p1 =(float)populacao1 / area1;
+    pib_per_capita1 = (float) PIB1 / populacao1;
+
+    
+
+
+    //Finalizou a carta 1: 
+
+    printf("\nPARABENS FINALIZAMOS A PRIMEIRA CARTA !!\n");
+    printf("AGORA VAMOS CADASTRAR A SEGUNDA CARTA:\n\n ");
+
+    //Carta 2: 
+
+     printf("CARTA 2:\n\n");
+
+    printf("1.Digite aqui apenas a primeira letra do estado: (exemplo: S)\n");
+    scanf(" %s", estado2);
+
+    printf("2.Digite aqui o codigo da cidade: (exemplo: S01)\n");
+    scanf(" %s", codigo2);
+
+    printf("3.Digite aqui o nome da cidade: (exemplo: São Paulo)\n");
+    scanf(" %s", nomedacidade2);
+
+    printf("4. Qual o numero de habitantes da cidade?\n");
+    scanf("%d", &populacao2);
+
+    printf("5.Digite a area(em KM):\n");
+    scanf("%f", &area2); 
+
+    printf("6. Digite o PIB:\n");
+    scanf("%f", &PIB2);
+
+    printf("7.Quantos pontos turisticos tem na cidade?\n");
+    scanf("%d", &pontosturisticos2);
+
+    
+    
+    densidade_p2 = (float) populacao2 / area2;
+    pib_per_capita2 = (float) PIB2 / populacao2;
+
+    //Finalizou a carta 2: 
+    
+    printf("\nPARABENS CARTAS CADASTRADAS COM SUCESSO!!\n\n");
+
+
+    printf("Carta 1: \n");
+    printf("Estado: %s \n", estado1);
+    printf("Codigo: %s \n", codigo1);
+    printf("Nome da Cidade: %s \n", nomedacidade1);
+    printf("Populacao: %d \n", populacao1);
+    printf("Area: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhoes de reais \n", PIB1);
+    printf("Numero de Pontos Turisticos: %d \n", pontosturisticos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_p1);
+    printf("PIB per Capita: %.2f reais\n", pib_per_capita1);
+
+    
+    printf("\n\nCarta 2: \n");
+    printf("Estado: %s \n", estado2);
+    printf("Codigo: %s \n", codigo2);
+    printf("Nome da Cidade: %s \n", nomedacidade2);
+    printf("Populacao: %d \n", populacao2);
+    printf("Area: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhoes de reais \n", PIB2);
+    printf("Numero de Pontos Turisticos: %d \n", pontosturisticos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_p2);
+    printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
+
+ 
+
+    
+    
+
+return 0;
+
+
+
+}
